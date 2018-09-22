@@ -5,8 +5,8 @@
 
     <StackLayout VerticalOptions="FillAndExpand">
         <Label Text="Welcome" VerticalTextAlignment="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" HorizontalOptions="Center"/>
-        <Button Text="Screen 1" Clicked="SelectedScreen1" HorizontalOptions="Center" VerticalOptions="Center"/>
-
+        <Button Text="Come and Join us!" Clicked="SelectedScreen1" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Button Text="Just see news" Clicked="SelectedScreen2" HorizontalOptions="Center" VerticalOptions="Center"/>
 
 
 

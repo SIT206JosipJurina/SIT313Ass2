@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIT313Assignment2.Views.DetailViews.GameRecommend">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="Information" 
+                   Text="Recommendation"
+                   TextColor="Black"
+                   FontSize="25"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center"/>
+            <StackLayout>
+                <Label Text="League of Legends"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+                <Button FontSize="10" Text="Check the Recommended Configuration" Clicked="Configuration1" VerticalOptions="Start" HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="World of Warcraft"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+                <Button FontSize="10" Text="Check the Recommended Configuration" Clicked="Configuration2" VerticalOptions="Start" HorizontalOptions="Center"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

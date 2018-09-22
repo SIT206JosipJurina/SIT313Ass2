@@ -10,15 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace SIT313Assignment2.Views.DetailViews
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class InfoScreen1 : ContentPage
+	public partial class NewsPage : ContentPage
 	{
-		public InfoScreen1 ()
+		public NewsPage ()
 		{
 			InitializeComponent ();
 		}
-        async void GameRecommend(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new GameRecommend());
-        }
-    }
+	}
 }

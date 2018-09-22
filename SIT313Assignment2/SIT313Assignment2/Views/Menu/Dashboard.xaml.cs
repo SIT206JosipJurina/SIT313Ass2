@@ -28,6 +28,10 @@ namespace SIT313Assignment2.Views.Menu
         {
             await Navigation.PushAsync(new InfoScreen1());
         }
+        async void SelectedScreen2(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NewsPage());
+        }
 
-	}
+    }
 }

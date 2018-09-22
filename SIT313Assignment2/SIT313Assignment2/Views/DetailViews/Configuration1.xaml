@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIT313Assignment2.Views.DetailViews.Configuration1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="League of Legends"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="Black"
+                   FontSize="25"/>
+            <Label Text="Recommended Specs"
+                   TextColor="Black"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+            <Label Text="3 GHz processor."
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+            <Label Text="2 GB of RAM (4 GB of RAM for Windows Vista and higher)"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+            <Label Text="12 GB available hard disk space."
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+            <Label Text="Nvidia GeForce 8800/AMD Radeon HD 5670 or equivalent video card (Dedicated GPU with 512MB or higher Video Memory(VRAM))"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+            <Label Text="Support for DirectX v9.0c or better."
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+            <Button x:Name="GoNews" Text="See the News" Clicked="SelectedScreen2" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
