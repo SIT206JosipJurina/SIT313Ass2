@@ -4,20 +4,21 @@
              x:Class="SIT313Assignment2.Views.DetailViews.NewsPage">
     <ContentPage.Content>
         <StackLayout Spacing="20">
-            <Label Text="News" 
+            <Label x:Name="txt1" Text="News" 
                 VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand"
                    FontSize="15"/>
-            <Label Text="The Nvidia GeForce RTX 2080 Ti is a whopper of a graphics card that's finally able to push 60 fps 4K gaming, without any compromises, on a single GPU. Not only is it dramatically more powerful than the Nvidia GeForce GTX 1080 Ti it replaces (and arguably the Titan XP as well), this graphics cards pushes the boundaries of computer graphics forward with ray tracing and AI-driven Tensor Cores."
-                   FontSize="10"
+            <Label x:Name="txt2" Text="The Nvidia GeForce RTX 2080 Ti is a whopper of a graphics card that's finally able to push 60 fps 4K gaming, without any compromises, on a single GPU. Not only is it dramatically more powerful than the Nvidia GeForce GTX 1080 Ti it replaces (and arguably the Titan XP as well), this graphics cards pushes the boundaries of computer graphics forward with ray tracing and AI-driven Tensor Cores."
+                   FontSize="12"
                 VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" />
-            <Label Text="While it might cost almost twice as much as the graphics card its replacing, the Nvidia GeForce RTX 2080 Ti delivers some impressive specs with 11GB of GDDR6 VRAM, 4,352 CUDA cores and a boost clock of 1,635MHz – thanks to Nvidia's first ever self-implemented 90MHz factory overclock. Comparatively, the Nvidia GeForce GTX 1080 Ti sports 11GB of last-generation GDDR5X VRAM, 3,584 CUDA cores and a 1,582MHz maximum frequency.
+            <Label x:Name="txt3" Text="While it might cost almost twice as much as the graphics card its replacing, the Nvidia GeForce RTX 2080 Ti delivers some impressive specs with 11GB of GDDR6 VRAM, 4,352 CUDA cores and a boost clock of 1,635MHz – thanks to Nvidia's first ever self-implemented 90MHz factory overclock. Comparatively, the Nvidia GeForce GTX 1080 Ti sports 11GB of last-generation GDDR5X VRAM, 3,584 CUDA cores and a 1,582MHz maximum frequency.
 
 This GPU also features two additional types of cores its predecessors never had in the form of RT and Tensor cores. The RTX 2080's Ti's 68 RT Cores power ray tracing, which allows this graphics card to render much more complex, real-time lighting scenarios and natural shadows than the 1080 Ti ever could."
-                   FontSize="10"
+                   FontSize="12"
                 VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="Logout" Clicked="Logout1" HorizontalOptions="Center" VerticalOptions="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

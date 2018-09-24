@@ -22,6 +22,7 @@ namespace SIT313Assignment2.Views.Menu
         void Init()
         {
             BackgroundColor = Constants.BackgroundColor;
+            this.test.Text = App.UserDatabase.GetUser().Username;
 
         }
         async void SelectedScreen1(object sender, EventArgs e)
@@ -32,6 +33,11 @@ namespace SIT313Assignment2.Views.Menu
         {
             await Navigation.PushAsync(new NewsPage());
         }
+        async void Logout(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new LoginPage());
+        }
+
 
     }
 }

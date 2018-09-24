@@ -4,13 +4,18 @@
              x:Class="SIT313Assignment2.Views.Menu.Dashboard">
 
     <StackLayout VerticalOptions="FillAndExpand">
-        <Label Text="Welcome" VerticalTextAlignment="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" HorizontalOptions="Center"/>
+        <Label Text="Welcome, Thank You for Logging In:" VerticalTextAlignment="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" HorizontalOptions="Center"/>
+        <Label x:Name="test" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center"  VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        
         <Button Text="Come and Join us!" Clicked="SelectedScreen1" HorizontalOptions="Center" VerticalOptions="Center"/>
         <Button Text="Just see news" Clicked="SelectedScreen2" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Button Text="Logout" Clicked="Logout" HorizontalOptions="Center" VerticalOptions="Center"/>
+       
 
 
 
     </StackLayout>
+    
     
     
     

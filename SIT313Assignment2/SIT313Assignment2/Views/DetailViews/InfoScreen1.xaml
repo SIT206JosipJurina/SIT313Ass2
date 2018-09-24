@@ -11,26 +11,26 @@
                 VerticalOptions="Start" 
                 HorizontalOptions="Center"/>
             <Label x:Name="lbl_CPU"
-                   FontSize="10"
+                   FontSize="12"
                    Text="CPU"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Entry x:Name="Entry_CPU" Placeholder="CPU" FontSize="10" />
             <Label x:Name="lbl_RAM"
                    Text="RAM"
-                   FontSize="10"
+                   FontSize="12"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Entry x:Name="Entry_RAM" Placeholder="RAM" FontSize="10" />
             <Label x:Name="lbl_Graphicscard"
                    Text="Graphics card"
-                   FontSize="10"
+                   FontSize="12"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Entry x:Name="Entry_Graphicscard" Placeholder="Graphics card" FontSize="10" />
             <Label x:Name="lbl_SSD"
                    Text="SSD"
-                   FontSize="10"
+                   FontSize="12"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Entry x:Name="Entry_SSD" Placeholder="SSD" FontSize="10" />

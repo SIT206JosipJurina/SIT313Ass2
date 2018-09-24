@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SIT313Assignment2.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +16,13 @@ namespace SIT313Assignment2.Views.DetailViews
 		public GameRecommend ()
 		{
 			InitializeComponent ();
+            Init();
 		}
+        private void Init()
+        {
+            BackgroundColor = Constants.BackgroundColor;
+            
+        }
         async void Configuration1(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Configuration1());

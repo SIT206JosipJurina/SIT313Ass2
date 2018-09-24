@@ -25,6 +25,9 @@
             <Label x:Name="Lbl_Password" Text="Password" />
             <Entry x:Name="Entry_Password" Placeholder="Password" />
             <Button x:Name="Btn_Signin" Text="Sign in" Clicked="SignInProcedure"/>
+
+            <ActivityIndicator x:Name="activityIndicator" IsRunning="{Binding IsBusy}" VerticalOptions="Center" HorizontalOptions="Center" Color="Orange"/>
+
         </StackLayout>
         
     </StackLayout>

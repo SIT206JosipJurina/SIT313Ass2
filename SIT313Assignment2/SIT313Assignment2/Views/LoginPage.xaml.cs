@@ -19,8 +19,18 @@ namespace SIT313Assignment2.Views
         public LoginPage ()
 		{
 			InitializeComponent ();
+            this.InitializeComponent();
+            this.BindingContext = this;
+            this.IsBusy = false;
+            this.Btn_Signin.Clicked += Btn_Signin_Clicked;
+            App.UserDatabase.DeleteUser(0);
+
             Init();
            
+        }
+        private void Btn_Signin_Clicked(object sender, EventArgs e)
+        {
+             this.IsBusy = true;
         }
 
         private void Init()
@@ -40,15 +50,18 @@ namespace SIT313Assignment2.Views
         public async void SignInProcedure(object sender, EventArgs e)
         {            
             User user = new User(Entry_Username.Text, Lbl_Password.Text);
-            Entry_Username.Text = "";
-            Entry_Password.Text = "";
+            // Entry_Username.Text = "";
+            // Entry_Password.Text = "";
+           
             if (user.CheckInformation())
             {
                 DisplayAlert("Login", "Login Success", "Ok");
-                var result = new Token();
-                if (result != null)
+                // var result = new Token();
+                
+                App.UserDatabase.SaveUser(user);
+                if (this.Entry_Username != null || this.Entry_Password != null)
                 {
-                   // App.UserDatabase.SaveUser(user);
+                    
                    // App.TokenDatabase.SaveToken(result);
 
                    // await Navigation.PushAsync(new Dashboard());
@@ -61,11 +74,14 @@ namespace SIT313Assignment2.Views
                         await Navigation.PushModalAsync(new NavigationPage(new Dashboard()));
                     }
                 }
-            }
+            }            
             else
             {
-                DisplayAlert("Login", "Login Not Correct, empty Username or Password.", "Ok");
+                DisplayAlert("Login", "Login Not Correct, empty Username or Password.", "Ok");              
+                this.IsBusy = false;
+                App.UserDatabase.DeleteUser(0);
             }
+            
         }
 	}
 }
