@@ -21,6 +21,7 @@ namespace SIT313Assignment2.iOS.Data
             var filename = "Testdb.db3";
             var documentPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             var libraryPath = Path.Combine(documentPath, "..", "Library");
+            var path = Path.Combine(libraryPath, filename);
             var connection = new SQLite.SQLiteConnection(path);
 
             return connection;
