@@ -3,6 +3,7 @@ using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SIT313Assignment2.Data;
+using SIT313Assignment2.Models;
 
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace SIT313Assignment2
@@ -11,8 +12,9 @@ namespace SIT313Assignment2
 	{
         static TokenDataBaseController tokenDatabase;
         static UserDatabaseController userDatabase;
+        private static Label labelScreen;
 
-		public App ()
+        public App ()
 		{
 			InitializeComponent();
 
@@ -34,6 +36,8 @@ namespace SIT313Assignment2
 			// Handle when your app resumes
 		}
 
+
+        //--------------------Database -----------------------------
         public static UserDatabaseController UserDatabase
         {
             get
@@ -45,6 +49,7 @@ namespace SIT313Assignment2
                 return userDatabase;
             }
         }
+        //-----------------Token Database---------------------------
         public static TokenDataBaseController TokenDatabase
         {
             get
@@ -55,6 +60,13 @@ namespace SIT313Assignment2
                 }
                 return tokenDatabase;
             }
+        }
+
+        //-----------------Internet Connection------------------------
+        public static void startcheckifinternet(Label label, Page page)
+        {
+            labelScreen = label;
+            label.Text = Constants.NoInternetText;
         }
     }
 }

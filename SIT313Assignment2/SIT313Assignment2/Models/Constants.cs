@@ -13,5 +13,7 @@ namespace SIT313Assignment2.Models
         public static Color MainTextColor = Color.White; // This is Main Text Color // Is Set to White Currently   
 
         public static int LoginIconHeight = 120;
+
+        public static string NoInternetText = "No Internet, please reconnect.";
     }
 }

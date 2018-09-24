@@ -65,6 +65,7 @@
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="27.0.2" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\NetworkConnection.cs" />
     <Compile Include="Data\SQLite_Android.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
